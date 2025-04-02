@@ -1,6 +1,6 @@
 # lab_2
 
-A new Flutter project.
+This is just Koda and Dino doing our thing, straight up vibin frfr
 
 ## Getting Started
 
