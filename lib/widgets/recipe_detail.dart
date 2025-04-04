@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lab2/model/recipe_database/recipe.dart';
 
 class RecipeDetail extends StatelessWidget {
-  const RecipeDetail({super.key});
+  const RecipeDetail(Recipe recipe, {super.key});
 
   @override
   Widget build(BuildContext context) {
