@@ -9,7 +9,6 @@ class RecipeList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     var recipeHandler = context.watch<RecipeHandler>();
     var recipes = recipeHandler.bestMatches;
 
