@@ -11,5 +11,5 @@ class AppTheme {
 
   //App color
 
-  static ColorScheme colorScheme = ColorScheme.fromSeed(seedColor: Colors.deepPurple,);
+  static ColorScheme colorScheme = ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 88, 230, 230),);
 }
