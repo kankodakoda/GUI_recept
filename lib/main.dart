@@ -6,7 +6,6 @@ import 'package:lab2/pages/main_view.dart';
 import 'package:lab2/ui_controller.dart';
 import 'package:provider/provider.dart';
 
-
 void main() {
   runApp(
     MultiProvider(
@@ -29,7 +28,7 @@ class MyApp extends StatelessWidget {
       title: 'Receptsök',
       theme: ThemeData(
         colorScheme: AppTheme.colorScheme,
-        textTheme: GoogleFonts.nunitoTextTheme(),
+        textTheme: AppTheme.textTheme,
       ),
       home: MainView(),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   //Spacing
@@ -11,5 +12,9 @@ class AppTheme {
 
   //App color
 
-  static ColorScheme colorScheme = ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 88, 230, 230),);
+  static ColorScheme colorScheme = ColorScheme.fromSeed(
+    seedColor: const Color.fromARGB(255, 88, 230, 230),
+  );
+
+  static TextTheme textTheme = GoogleFonts.nunitoTextTheme();
 }
