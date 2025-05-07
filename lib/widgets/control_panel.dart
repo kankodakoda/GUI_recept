@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lab2/widgets/difficulty_control.dart';
 import 'package:lab2/widgets/ingredient_control.dart';
 import 'package:lab2/widgets/kitchen_control.dart';
+import 'package:lab2/widgets/logo.dart';
 import 'package:lab2/widgets/price_control.dart';
 import 'package:lab2/widgets/time_control.dart';
 
@@ -15,7 +16,8 @@ class ControlPanel extends StatelessWidget {
       color: const Color.fromARGB(255, 255, 188, 201),
       child: Column(
         children: [
-          Text("Receptsök"),
+          Logo(),
+          SizedBox(height: 16),
           Text(
             "Hitta ett recept som passar genom att ändra inställningarna nedanför",
           ),

@@ -9,6 +9,10 @@ class AppTheme {
   static const double paddingMedium = 16.0;
   static const double paddingLarge = 24.0;
   static const double paddingHuge = 32.0;
+  static const TextStyle mediumHeading = TextStyle(
+    fontSize: 22,
+    fontWeight: FontWeight.w400,
+  );
 
   //App color
 
