@@ -17,13 +17,24 @@ class ControlPanel extends StatelessWidget {
       child: Column(
         children: [
           Logo(),
-          SizedBox(height: 16),
-          Text(
-            "Hitta ett recept som passar genom att ändra inställningarna nedanför",
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Text(
+              "Hitta ett recept som passar genom att ändra inställningarna nedanför",
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
           ),
           SizedBox(height: 16),
-          IngredientControl(),
-          KitchenControl(),
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: IngredientControl(),
+          ),
+          SizedBox(height: 8),
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: KitchenControl(),
+          ),
           SizedBox(height: 16),
           Column(children: [Text("Svårighetsgrad:"), DifficultyControl()]),
           SizedBox(height: 20),

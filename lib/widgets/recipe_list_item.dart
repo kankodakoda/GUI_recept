@@ -24,6 +24,7 @@ class RecipeListItem extends StatelessWidget {
           height: 128,
           child: Row(
             children: [
+              SizedBox(width: 12),
               _image(recipe),
               SizedBox(width: 16),
               Expanded(
@@ -32,10 +33,13 @@ class RecipeListItem extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(recipe.name, style: AppTheme.mediumHeading),
-                    Text(
-                      recipe.description,
-                      overflow: TextOverflow.ellipsis,
-                      maxLines: 2,
+                    Padding(
+                      padding: const EdgeInsets.only(right: 8.0),
+                      child: Text(
+                        recipe.description,
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 2,
+                      ),
                     ),
                     Spacer(),
                     Row(

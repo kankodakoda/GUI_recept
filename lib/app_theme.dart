@@ -14,6 +14,11 @@ class AppTheme {
     fontSize: 22,
     fontWeight: FontWeight.w400,
   );
+  static const TextStyle smallHeading = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    letterSpacing: 0.15,
+  );
 
   //App color
 
