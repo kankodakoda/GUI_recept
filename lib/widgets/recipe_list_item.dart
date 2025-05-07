@@ -16,40 +16,45 @@ class RecipeListItem extends StatelessWidget {
     return Card(
       elevation: 4,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: Container(
-        height: 128,
-        child: Row(
-          children: [
-            _image(recipe),
-            SizedBox(width: 16),
-            Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(recipe.name, style: AppTheme.mediumHeading),
-                  Text(
-                    recipe.description,
-                    overflow: TextOverflow.ellipsis,
-                    maxLines: 2,
-                  ),
-                  Spacer(),
-                  Row(
-                    children: [
-                      MainIngredient.icon(recipe.mainIngredient)!,
-                      SizedBox(width: AppTheme.paddingSmall),
-                      Difficulty.icon(recipe.difficulty)!,
-                      SizedBox(width: AppTheme.paddingSmall),
-                      Text('${recipe.time} minuter'),
-                      SizedBox(width: AppTheme.paddingSmall),
-                      Text('${recipe.price} kr'),
-                    ],
-                  ),
-                  SizedBox(height: 10),
-                ],
+      child: InkWell(
+        borderRadius: BorderRadius.circular(12),
+        splashColor: Colors.blue.withAlpha(30),
+        onTap: onTap,
+        child: Container(
+          height: 128,
+          child: Row(
+            children: [
+              _image(recipe),
+              SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(recipe.name, style: AppTheme.mediumHeading),
+                    Text(
+                      recipe.description,
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                    ),
+                    Spacer(),
+                    Row(
+                      children: [
+                        MainIngredient.icon(recipe.mainIngredient)!,
+                        SizedBox(width: AppTheme.paddingSmall),
+                        Difficulty.icon(recipe.difficulty)!,
+                        SizedBox(width: AppTheme.paddingSmall),
+                        Text('${recipe.time} minuter'),
+                        SizedBox(width: AppTheme.paddingSmall),
+                        Text('${recipe.price} kr'),
+                      ],
+                    ),
+                    SizedBox(height: 10),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

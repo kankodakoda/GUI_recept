@@ -27,12 +27,15 @@ class Logo extends StatelessWidget {
             ),
             Transform.rotate(
               angle: -20 * pi / 180, // Convert degrees to radians,
-              child: Text(
-                'Sök',
-                style: TextStyle(
-                  fontFamily: 'Pacifico',
-                  fontSize: 64,
-                  color: Color(0xFFFFAC33),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 120, top: 40),
+                child: Text(
+                  'Sök',
+                  style: TextStyle(
+                    fontFamily: 'Pacifico',
+                    fontSize: 64,
+                    color: Color(0xFFFFAC33),
+                  ),
                 ),
               ),
             ),
